@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+<article lang="en">
+    <h1>This is the headline</h1>
+    <div class="box">
+        <p>The first paragraph.</p>
+        <p>Some text in a second paragraph.</p>
+        <p>Third paragraph. <span lang="es" class="bilingual">Esta oración está en español.</span> Some of this text is
+            in another language.</p>
+        <p>Fourth paragraph.</p>
+    </div>
+</article>
+<!--Don't use div and span for everything. Div is a block level element, span is an in-line element. They both do the same thing 
+    until you point css or javascript at them. Use them as a last resort
+-->
+</body>
+</html>
