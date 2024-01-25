@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+<head>
+    <title>form basics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<main>
+    <form action="success.html" method="get"> <!--Do not use get for a real website. This is just being used here as practice.-->
+        <label>Name</label>
+        <input name="Name">
+        <label>Email</label>
+        <input name="Email"> <!--Take note that the input element is a replace element-->
+        <button>Sign up</button>
+        <!--This version is not the best. Two other versions were proposed-->
+
+        <!--Option 1-->
+        <p> 
+            <label for="Name">Name</label>
+            <input id="Name"name="Name" type="text"> </input>
+            
+            <label for="Email">Email</label>
+            <input id="Email" name="Email" type="email" required placeholder="me@gmail.com"> </input>
+            
+            <button>Sign up</button>
+        </p>
+        <!--Option 2-->
+        
+        <p>
+        <label> Name <input name="Name" type="text"></input>
+        </label>
+        <label> Email <input name ="Email" type="email" required placeholder="me@gmail.com"> </input> 
+        </label>
+        <button>Sign up</button>
+        </p>
+
+        <!-- For the two options above, you will notice that when you put your cursor on the Name or Email, the box responds-->
+        <!--Remember to use placeholder and not value so that users do not have to erase the content before theya are able to input their 
+            email-->       
+    </form>
+</main>
+</body>
+
+</html>
