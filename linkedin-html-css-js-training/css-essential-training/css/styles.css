@@ -12,15 +12,19 @@ Off-white #f6f6f6
 
 /*GLOBAL STYLES
 --------------------------------------*/
-
-
 body {
-    background-color: lavender;
+    background-color: #f6f6f6;
 } 
 
 /* HOME
 --------------------------------------*/
-
+.home {
+    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background-size: cover;
+}
+.home .content-wrapper {
+    background: rgb(255 255 255 / 0.9);
+}
 
 /* RESUME
 --------------------------------------*/
@@ -43,3 +47,7 @@ body {
 
 /* FOOTER 
 --------------------------------------*/
+footer {
+    background: #222;
+    color: #d3d4d6;
+}
