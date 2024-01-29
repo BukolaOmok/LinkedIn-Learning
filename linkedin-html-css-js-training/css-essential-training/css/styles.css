@@ -57,6 +57,14 @@ a:hover {
 
 /* RESUME
 --------------------------------------*/
+.resume header::before {
+    background: url(../images/bg-home-office-studio.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+
+}
 
 /* Profile
 --------------------------------------*/
