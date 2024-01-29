@@ -44,6 +44,11 @@ a:hover {
     padding: 30px;
     max-width: 900px; 
 }
+.download-link {
+background: #3c8453;
+color: #d3d4d6;
+text-decoration: none;
+}   
 
 /* HOME
 --------------------------------------*/
@@ -69,6 +74,11 @@ a:hover {
 }
 .resume-section h2 {
     border-bottom: 2px dashed #d3d4d6;
+}
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
 }
 
 /* Profile
