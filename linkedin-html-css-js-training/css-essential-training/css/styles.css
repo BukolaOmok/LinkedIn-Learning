@@ -22,7 +22,10 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 body {
     background: #f6f6f6;
