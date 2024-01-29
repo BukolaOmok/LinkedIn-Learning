@@ -25,6 +25,10 @@ html {
 html, body {
     height: 100%;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Caveat', cursive;
 }
 
 body {
