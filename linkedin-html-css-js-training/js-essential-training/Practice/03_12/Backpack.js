@@ -28,10 +28,10 @@ class Backpack {
     this.lidOpen = lidOpen;
   }
   // Add methods like normal functions:
-  toggleLid(lidStatus) {
+  toggleLid(lidStatus) { // Method to toggle lid
     this.lidOpen = lidStatus;
   }
-  newStrapLength(lengthLeft, lengthRight) {
+  newStrapLength(lengthLeft, lengthRight) { //Method to add new straplength 
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   }
