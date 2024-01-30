@@ -18,3 +18,6 @@ const everydayPack = new Backpack(
 
 console.log("The everydayPack object:", everydayPack);
 console.log("Date acquired:", everydayPack.dateAcquired);
+console.log("Date Since Acquired:", everydayPack.backpackAge())
+
+//There are more objects in MDN web docs
