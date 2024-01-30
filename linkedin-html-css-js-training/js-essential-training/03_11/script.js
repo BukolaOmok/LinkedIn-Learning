@@ -39,3 +39,5 @@ const everydayPack = new Backpack(
   26,
   false
 );
+
+// This is an older version. The class fuction is a more preferable method to use

@@ -16,3 +16,5 @@ const everydayPack = new Backpack(
 
 console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
+
+//This is more preferable than the object constructor. This is more modern and it puts the class in a separate pafge so it allows for more flexibility
