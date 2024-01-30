@@ -43,7 +43,7 @@ const handbag = {
   },
 };
 
-
+//Console Checks
 console.log("The handbag object:", handbag);
 console.log("The purse object:", handbag.purse);
 console.log("The purse color property:", handbag.purse.color);
