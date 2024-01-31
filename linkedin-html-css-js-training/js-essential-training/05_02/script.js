@@ -49,3 +49,5 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+// This is the more recent way to search using console via query. get by ID and class have become a thing of the past

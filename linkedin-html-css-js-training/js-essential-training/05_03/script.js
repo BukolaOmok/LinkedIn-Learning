@@ -51,3 +51,5 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+// This method is the older version. Developers now use the query selector instead of get by ID or class"
