@@ -51,3 +51,5 @@ const content = `
 `;
 
 main.innerHTML = content;
+
+//Use classlist instead of class name
