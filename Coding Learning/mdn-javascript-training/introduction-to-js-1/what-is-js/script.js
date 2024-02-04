@@ -28,3 +28,14 @@ const buttons1 = document.querySelectorAll(".buttons1");
 for (const button of buttons1) {
   button.addEventListener("click", createParagraphForSecondButton); // Corrected the event name to lowercase "click"
 }
+
+function createParagraphForThirdButton() {
+  const par = document.createElement("h2");
+  par.textContent = "You are a rockstarrrr!!!";
+  document.body.appendChild(par);
+}
+
+const buttons2 = document.querySelectorAll(".buttons2");
+for (const button of buttons2) {
+  button.addEventListener("click", createParagraphForThirdButton);
+}
