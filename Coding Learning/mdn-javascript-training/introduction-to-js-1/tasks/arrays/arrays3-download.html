@@ -29,7 +29,10 @@
     let myArray = [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
 
     // Add your code here
-
+    myArray.pop()
+    myArray.push('Romeo', 'Juliet')
+    myArray = myArray.map((item, index) => `${item} (${index})`);
+    let myString = hyphenSeparated = myArray.join("-");
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
