@@ -31,6 +31,12 @@
 
     // Add your code here
 
+    for (item of myArray) {
+     const li = document.createElement('li'); // Create a new <li> element for each item
+  li.textContent = item; // Set the text content of the <li> to the current item
+  list.appendChild(li);
+    }
+
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
