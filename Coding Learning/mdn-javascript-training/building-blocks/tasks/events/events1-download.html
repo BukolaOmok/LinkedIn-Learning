@@ -31,6 +31,18 @@
   <script>
     const btn = document.querySelector('.off');
 
+        function toggleButtonText() {
+      // Toggle text content of the button
+      if (btn.textContent === 'Machine is off') {
+        btn.textContent = 'Machine is on';
+      } else {
+        btn.textContent = 'Machine is off';
+      }
+    }
+    
+    btn.addEventListener("click", toggleButtonText);
+    
+
     // Add your code here
 
   </script>
