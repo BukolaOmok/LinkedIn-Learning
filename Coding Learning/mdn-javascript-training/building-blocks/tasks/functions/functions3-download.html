@@ -31,6 +31,21 @@
 
     // Add your code here
 
+    function random(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Update the chooseName() function
+function chooseName(namesArray) {
+  const randomIndex = random(0, namesArray.length - 1);
+  return namesArray[randomIndex];
+}
+
+// Call the chooseName function and set the returned name as the paragraph's text content
+const randomName = chooseName(names);
+para.textContent = randomName;
+
+
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
