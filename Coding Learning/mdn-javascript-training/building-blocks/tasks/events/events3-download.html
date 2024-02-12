@@ -43,6 +43,18 @@
 
   // Add your code here
 
+  function buttonChange (event) {
+ if (event.target.tagName === 'BUTTON') {
+    // Get the color from the data-color attribute of the clicked button
+    const color = event.target.dataset.color;
+    
+    // Set the background color of the button-bar
+    buttonBar.style.backgroundColor = color;
+  }
+};
+
+buttonBar.addEventListener('click', buttonChange)
+
   </script>
   </body>
 </html>
