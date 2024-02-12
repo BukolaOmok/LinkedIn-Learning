@@ -47,9 +47,29 @@
     let y = 50;
     const size = 30;
 
-    drawCircle(x, y, size);
+    const move = drawCircle(x, y, size);
 
     // Add your code here
+    
+    document.addEventListener('keydown', function(event) {
+  // Move the circle based on the WASD keys
+  switch (event.key) {
+    case 'w': // Up (W key)
+      y -= 10;
+      break;
+    case 'a': // Left (A key)
+      x -= 10;
+      break;
+    case 's': // Down (S key)
+      y += 10;
+      break;
+    case 'd': // Right (D key)
+      x += 10;
+      break;
+  }
+
+   move;
+   });
 
   </script>
   </body>
