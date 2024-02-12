@@ -26,9 +26,23 @@
 
   </body>
   <script>
-    let bandInfo;
+    
+    const favouriteBand = {
+      
+      name: "One Direction",
+      nationality: "British",
+      genre: "Soft Rock",
+      members: 4,
+      formed: 2008,
+      split: false,
+      albums: [
+        {name: "The Sun Goes Down", released: 2009},
+        {name: "Album 2", released: 2012},
+        {name: "Album 3", released: 2015},
+      ]
+    };
 
-    // Add your code here
+    let bandInfo = `${favouriteBand.name} is a ${favouriteBand.nationality} band formed in ${favouriteBand.formed}. They are known for their ${favouriteBand.genre} music. Their first album ${favouriteBand.albums[0].name} was released in ${favouriteBand.albums[0].released}.`;
 
 
     // Don't edit the code below here!
