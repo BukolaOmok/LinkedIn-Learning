@@ -21,11 +21,53 @@
     <section class="preview">
 
 
+      
 
     </section>
 
+
   </body>
   <script>
+
+class Shape {
+  name;
+  sides;
+  sideLength;
+
+constructor (name, sides, sideLength) {
+this.name = name; 
+this.sides = sides;
+this.sideLength = sideLength;
+}
+
+calcPerimeter() {
+const perimeter = this.sides * this.sideLength;
+     console.log (`Perimeter of ${this.name} is: ${perimeter}`);
+}
+
+}
+
+const triangle = new Shape ("Triangle", 3, 3)
+triangle.calcPerimeter();
+
+
+class Square extends Shape {
+
+constructor (name, sides, sideLength) {
+  super(name, sides, sideLength); 
+}
+
+calcArea() {
+  const area = this.sideLength ** 2;
+  console.log (`Area of ${this.name} is: ${area}`);
+}
+}
+
+const square = new Square ("Square", 4, 4)
+square.calcPerimeter();
+square.calcArea();
+
+
 
   </script>
 
