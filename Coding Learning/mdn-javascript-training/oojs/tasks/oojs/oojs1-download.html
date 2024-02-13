@@ -25,14 +25,34 @@
     </section>
 
   </body>
+    <p id = para></p>
+
   <script>
+
+    const para = document.querySelector ("p")
   class Shape {
+  name;
+  sides;
+  sideLength;
 
-    name;
-    sides;
-    sideLength;
+constructor (name, sides, sideLength) {
+this.name = name; 
+this.sides = sides;
+this.sideLength = sideLength;
+}
 
-  }
+calcPerimeter() {
+const perimeter = this.sides * this.sideLength;
+     return (`Perimeter of ${this.name} is: ${perimeter}`);
+}
+
+}
+
+const triangle = new Shape ("Triangle", 3, 3)
+para.innerHTML = triangle.calcPerimeter();
+
+
+    
 
   </script>
 
