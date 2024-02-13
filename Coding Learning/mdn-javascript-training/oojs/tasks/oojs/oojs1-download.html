@@ -43,15 +43,13 @@ this.sideLength = sideLength;
 
 calcPerimeter() {
 const perimeter = this.sides * this.sideLength;
-     return (`Perimeter of ${this.name} is: ${perimeter}`);
+     console.log (`Perimeter of ${this.name} is: ${perimeter}`);
 }
 
 }
 
 const triangle = new Shape ("Triangle", 3, 3)
-para.innerHTML = triangle.calcPerimeter();
-
-
+triangle.calcPerimeter();
     
 
   </script>
