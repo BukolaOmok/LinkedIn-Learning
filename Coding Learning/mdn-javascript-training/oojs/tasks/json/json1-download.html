@@ -34,15 +34,47 @@
     let kittenInfo;
     const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json';
 
+      
     fetch(requestURL)
     .then(response => response.text())
-    .then(text => displayCatInfo(text))
+    .then(text => {
+      const cats = JSON.parse(text);
+      displayCatInfo(cats) // Parsing the text to JSON inside the .then() chain
+       
+  });
 
-    function displayCatInfo(catString) {
+
+    function displayCatInfo(cats) {
       let total = 0;
       let male = 0;
+      let female = 0;
 
-      // Add your code here
+      cats.forEach((cat, index) => {
+         if (index === cats.length - 1) { // Check if it's the last cat for formatting
+                    motherInfo += `and ${cat.name}`;
+                } else {
+                    motherInfo += `${cat.name}, `;
+                }
+
+      // Count kittens and genders
+      cat.kittens.forEach(kitten => {
+        total++;
+        if (kitten.gender === "m") male++;
+        else if (kitten.gender === "f") female++;
+      });
+    });
+
+      motherInfo += '.'; // Finish the motherInfo string with a period.
+
+      // Step 4: Construct kittenInfo string
+      kittenInfo = `Total of ${total} kittens, ${male} male and ${female} female.`;
+
+    // Fetching data and calling displayCatInfo
+    fetch(requestURL)
+      .then(response => response.json()) // Directly parse JSON here
+      .then(data => displayCatInfo(JSON.stringify(data)));
+    
+
 
       // Don't edit the code below here!
 
